@@ -1,0 +1,188 @@
+void whitewalker() {
+
+
+    /*//horns
+    glPushMatrix();
+        glRotated(180,0,0,1);
+        glTranslated(5,0,0);
+        glBegin(GL_POLYGON);
+            glColor3f(0.69,0.77,0.87);
+            glVertex2f(2, 2);
+            glVertex2f(2, 0);
+            glVertex2f(-2, 0);
+            //glVertex2f(2, 10);
+        glEnd();
+    glPopMatrix();*/
+
+    //head
+    glPushMatrix();
+        glTranslated(0,39,0);
+        glColor3f(0.69,0.77,0.87);
+        drawCircle(9,10);
+    glPopMatrix();
+
+    //right ear
+    glPushMatrix();
+        glTranslated(10,39,0);
+        glColor3f(0.69,0.77,0.87);
+        drawCircle(2,2);
+    glPopMatrix();
+
+    //left ear
+    glPushMatrix();
+        glTranslated(-10,39,0);
+        glColor3f(0.69,0.77,0.87);
+        drawCircle(2,2);
+    glPopMatrix();
+
+    //eyes
+    glPushMatrix();
+        glTranslated(4,39,0);
+        glColor3f(0,0,1);
+        drawCircle(3,1);
+    glPopMatrix();
+
+    glPushMatrix();
+        glTranslated(-4,39,0);
+        glColor3f(0,0,1);
+        drawCircle(3,1);
+    glPopMatrix();
+
+
+    //neck
+    glPushMatrix();
+        glTranslated(0,20,0);
+        glColor3f(0.29,0.44,0.55);
+        glScaled(0.7,2,0);
+        draw_rec();
+    glPopMatrix();
+
+    //right arm
+    glPushMatrix();
+        glTranslated(18,12,0);
+        glRotated(30,0,0,1);
+        glColor3f(0.13,0.13,0.13);
+        glScaled(0.7,2,0);
+        draw_rec();
+    glPopMatrix();
+
+    //left arm
+    glPushMatrix();
+        glTranslated(-18,12,0);
+        glRotated(-30,0,0,1);
+        glColor3f(0.13,0.13,0.13);
+        glScaled(0.7,2,0);
+        draw_rec();
+    glPopMatrix();
+
+    //black-belt
+    glPushMatrix();
+        glTranslated(0,12,0);
+        glColor3f(0.13,0.13,0.13);
+        glScaled(2,2,0);
+        draw_rec();
+    glPopMatrix();
+
+    //chest plate
+    glPushMatrix();
+        glTranslated(9,22,0);
+        glRotated(45,0,0,1);
+        glScaled(1.2,1.2,0);
+        glColor3f(0.34,0.34,0.34);
+        draw_rec();
+    glPopMatrix();
+
+    glPushMatrix();
+        glTranslated(-9,22,0);
+        glRotated(-45,0,0,1);
+        glScaled(1.2,1.2,0);
+        glColor3f(0.34,0.34,0.34);
+        draw_rec();
+    glPopMatrix();
+
+    //blue-belt
+    glPushMatrix();
+        glTranslated(0,8,0);
+        glColor3f(0.29,0.44,0.55);
+        glScaled(2,0.5,0);
+        draw_rec();
+    glPopMatrix();
+
+    //black-belt
+    glPushMatrix();
+        glTranslated(0,4,0);
+        glColor3f(0.13,0.13,0.13);
+        glScaled(2,0.5,0);
+        draw_rec();
+    glPopMatrix();
+
+    //skirt
+    glPushMatrix();
+        glTranslated(0,-15,0);
+        glColor3f(0.34,0.34,0.34);
+        glScaled(4,1,0);
+        draw_rec();
+    glPopMatrix();
+
+    glPushMatrix();
+        glTranslated(0,-6.5,0);
+        glColor3f(0.34,0.34,0.34);
+        glScaled(3,1,0);
+        draw_rec();
+    glPopMatrix();
+
+    glPushMatrix();
+        glColor3f(0.34,0.34,0.34);
+        glScaled(2,0.5,0);
+        draw_rec();
+    glPopMatrix();
+
+    //skirt's zipper
+    glPushMatrix();
+        glTranslated(0,-9,0);
+        glColor3f(0.29,0.44,0.55);
+        glScaled(0.8,2.2,0);
+        draw_rec();
+    glPopMatrix();
+
+    //left-leg
+    glPushMatrix();
+        glTranslated(-10,-30,0);
+        glColor3f(0.13,0.13,0.13);
+        glScaled(1,2,0);
+        draw_rec();
+    glPopMatrix();
+
+    //right-leg
+    glPushMatrix();
+        glTranslated(10,-30,0);
+        glColor3f(0.13,0.13,0.13);
+        glScaled(1,2,0);
+        draw_rec();
+    glPopMatrix();
+
+    //left-shoe
+    glPushMatrix();
+        glTranslated(-16,-50,0);
+        glBegin(GL_POLYGON);
+            glColor3f(0.34,0.34,0.34);
+            glVertex2f(10, 10);
+            glVertex2f(10, 0);
+            glVertex2f(-10, 0);
+            glVertex2f(2, 10);
+        glEnd();
+    glPopMatrix();
+
+    //right-shoe
+    glPushMatrix();
+        glTranslated(16,-50,0);
+        glBegin(GL_POLYGON);
+            glColor3f(0.34,0.34,0.34);
+            glVertex2f(-10, 10);
+            glVertex2f(-10, 0);
+            glVertex2f(10, 0);
+            glVertex2f(-2, 10);
+        glEnd();
+    glPopMatrix();
+
+}
